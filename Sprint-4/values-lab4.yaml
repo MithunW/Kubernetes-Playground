@@ -1,0 +1,11 @@
+service:
+  type: ClusterIP
+  ports:
+    http: 8081
+containerPorts:
+  http: 8080
+replicaCount: 2
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
